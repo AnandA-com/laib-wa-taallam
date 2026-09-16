@@ -1,0 +1,1125 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    min-height: 100vh;
+
+    background: #eef8ff;
+
+    font-family: Arial, sans-serif;
+
+    color: #1e293b;
+
+    padding: 20px;
+}
+
+
+/* =========================================
+   CONTAINER UTAMA
+========================================= */
+
+.container {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   TEKS UMUM
+========================================= */
+
+h1 {
+    color: #2563eb;
+    text-align: center;
+}
+
+h2 {
+    color: #111827;
+    text-align: center;
+}
+
+h3 {
+    color: #2563eb;
+}
+
+p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   TOMBOL UMUM
+========================================= */
+
+button {
+    border: none;
+
+    cursor: pointer;
+
+    font-family: Arial, sans-serif;
+
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HALAMAN UTAMA
+========================================= */
+
+#homePage {
+    min-height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* Judul Arab tanpa harakat */
+
+#homePage h1 {
+    width: 100%;
+
+    margin: 0 auto 20px auto;
+
+    color: #2563eb;
+
+    font-size: 58px;
+
+    text-align: center;
+}
+
+
+/* Judul Indonesia */
+
+#homePage h2 {
+    width: 100%;
+
+    margin: 0 auto 12px auto;
+
+    font-size: 30px;
+
+    text-align: center;
+}
+
+
+/* Kalimat Yuk belajar */
+
+#homePage p {
+    display: block;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* Tombol mulai */
+
+#startButton {
+    display: block;
+
+    margin: 25px auto 0 auto;
+
+    padding: 15px 30px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+}
+
+#startButton:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   TOMBOL KEMBALI
+========================================= */
+
+.back-button {
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    margin-bottom: 15px;
+
+    background: #64748b;
+
+    color: white;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+}
+
+.back-button:hover {
+    background: #475569;
+}
+
+
+/* =========================================
+   HALAMAN PILIH LEVEL
+========================================= */
+
+#levelPage {
+    display: none;
+
+    text-align: center;
+
+    padding: 15px 10px;
+}
+
+
+#levelPage > h2 {
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+
+#levelPage > p {
+    width: 100%;
+
+    margin: 0 auto 25px auto;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   KARTU LEVEL
+========================================= */
+
+.levels {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    max-width: 700px;
+
+    margin: 25px auto;
+}
+
+
+.level-card {
+    padding: 25px 15px;
+
+    background: #f8fafc;
+
+    border: 1px solid #dbe3ec;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition: 0.2s ease;
+}
+
+
+.level-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 8px 18px rgba(37, 99, 235, 0.10);
+}
+
+
+/* Nomor level */
+
+.level-number {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* Judul Arab level */
+
+.level-card h3 {
+    margin: 15px 0 8px;
+
+    color: #2563eb;
+
+    font-size: 21px;
+}
+
+
+/* Keterangan level */
+
+.level-card p {
+    margin: 0 auto 18px auto;
+
+    font-size: 14px;
+
+    text-align: center;
+}
+
+
+/* Tombol level */
+
+.level-button {
+    padding: 10px 18px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+.level-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   MENU PILIH PERMAINAN
+========================================= */
+
+#gameMenu {
+    display: none;
+
+    text-align: center;
+
+    padding: 15px 5px;
+}
+
+
+#gameMenu > h2 {
+    margin-top: 5px;
+
+    font-size: 28px;
+}
+
+
+#gameMenu > p {
+    width: 100%;
+
+    margin: 0 auto 20px auto;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   INFORMASI LEVEL
+========================================= */
+
+.level-title {
+    max-width: 450px;
+
+    margin: 10px auto 20px auto;
+
+    padding: 13px;
+
+    background: #eff6ff;
+
+    border-radius: 13px;
+
+    text-align: center;
+}
+
+
+.level-title span {
+    display: block;
+
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.level-title h3 {
+    margin-top: 5px;
+
+    color: #111827;
+
+    font-size: 22px;
+}
+
+
+/* =========================================
+   EMPAT PILIHAN PERMAINAN
+========================================= */
+
+.game-menu {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 25px auto;
+}
+
+
+/* =========================================
+   KARTU PERMAINAN
+========================================= */
+
+.game-card {
+    min-height: 200px;
+
+    padding: 25px 18px;
+
+    background: #f8fafc;
+
+    border: 1px solid #dbe3ec;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    transition: 0.2s ease;
+}
+
+
+.game-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 8px 18px rgba(37, 99, 235, 0.10);
+}
+
+
+/* Icon */
+
+.game-icon {
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Judul game */
+
+.game-card h3 {
+    color: #2563eb;
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+
+/* Deskripsi game */
+
+.game-card p {
+    max-width: 250px;
+
+    margin: 0 auto 14px auto;
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+
+/* Tombol mulai game */
+
+.game-button {
+    padding: 10px 28px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+
+.game-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   AREA GAME
+========================================= */
+
+.game-area {
+    display: none;
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 25px 20px;
+
+    background: #f8fafc;
+
+    border: 1px solid #edf2f7;
+
+    border-radius: 17px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   LEVEL DI DALAM GAME
+========================================= */
+
+.game-area .level-title {
+    max-width: 450px;
+
+    margin: 0 auto 20px auto;
+
+    padding: 13px;
+
+    background: #eff6ff;
+
+    border-radius: 13px;
+}
+
+
+.game-area .level-title span {
+    display: block;
+
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.game-area .level-title h3 {
+    margin-top: 5px;
+
+    color: #111827;
+
+    font-size: 22px;
+}
+
+
+/* =========================================
+   JUDUL GAME
+========================================= */
+
+.game-area > h2 {
+    margin-bottom: 8px;
+
+    font-size: 25px;
+}
+
+
+.game-area > p {
+    text-align: center;
+
+    margin: 0 auto 15px auto;
+}
+
+
+/* =========================================
+   INFORMASI SOAL DAN SKOR
+========================================= */
+
+.game-info {
+    display: flex;
+
+    justify-content: space-between;
+
+    max-width: 500px;
+
+    margin: 15px auto;
+
+    padding: 11px 15px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   PROGRESS BAR
+========================================= */
+
+.progress-container {
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 15px auto 20px auto;
+}
+
+
+.progress-bar {
+    width: 100%;
+
+    height: 10px;
+
+    background: #dbe3ec;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+/* Progress Cocokkan + Terjemahkan */
+
+#progressBar,
+#translateProgressBar {
+
+    width: 0%;
+
+    height: 100%;
+
+    background: #2563eb;
+
+    border-radius: 20px;
+
+    transition: width 0.4s ease;
+}
+
+
+/* Teks progress */
+
+#progressText,
+#translateProgressText {
+
+    margin-top: 5px;
+
+    color: #64748b;
+
+    font-size: 11px;
+
+    text-align: right;
+}
+
+
+/* =========================================
+   PERTANYAAN
+========================================= */
+
+.question {
+    max-width: 500px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 13px;
+
+    text-align: center;
+}
+
+
+.question h1 {
+    margin: 0;
+
+    color: #2563eb;
+
+    font-size: 42px;
+
+    text-align: center;
+}
+
+
+/* Pertanyaan Arab */
+
+#kataArab,
+#translateQuestion {
+
+    direction: rtl;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   PILIHAN JAWABAN
+========================================= */
+
+.answers {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+
+    max-width: 500px;
+
+    margin: 15px auto;
+}
+
+
+.answer {
+    width: 100%;
+
+    min-height: 48px;
+
+    padding: 11px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+
+.answer:hover {
+    background: #1d4ed8;
+}
+
+
+.answer:disabled {
+    cursor: not-allowed;
+
+    transform: none;
+
+    opacity: 0.9;
+}
+
+
+/* =========================================
+   JAWABAN BENAR
+========================================= */
+
+.answer.correct {
+    background: #16a34a !important;
+
+    color: white;
+}
+
+
+/* =========================================
+   JAWABAN SALAH
+========================================= */
+
+.answer.wrong {
+    background: #dc2626 !important;
+
+    color: white;
+}
+
+
+/* =========================================
+   FEEDBACK
+========================================= */
+
+#feedback,
+#translateFeedback {
+
+    min-height: 25px;
+
+    margin: 15px auto;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   TOMBOL BERIKUTNYA
+========================================= */
+
+.next-button {
+    display: none;
+
+    margin: 15px auto 0 auto;
+
+    padding: 10px 22px;
+
+    background: #16a34a;
+
+    color: white;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+
+.next-button:hover {
+    background: #15803d;
+}
+
+
+/* =========================================
+   GAME TERJEMAHKAN
+========================================= */
+
+#gameTerjemahkan {
+    text-align: center;
+}
+
+
+#gameTerjemahkan > p {
+    text-align: center;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+
+/* =========================================
+   TEBAK GAMBAR
+========================================= */
+
+#gameGambar {
+    text-align: center;
+}
+
+
+#gameGambar > p {
+    text-align: center;
+}
+
+
+/* =========================================
+   LISTENING
+========================================= */
+
+#gameListening {
+    text-align: center;
+}
+
+
+#gameListening > p {
+    text-align: center;
+}
+
+
+/* =========================================
+   RESPONSIVE / HP
+========================================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 10px;
+    }
+
+
+    .container {
+        padding: 25px 15px;
+
+        border-radius: 18px;
+    }
+
+
+    #homePage {
+        min-height: 350px;
+    }
+
+
+    #homePage h1 {
+        font-size: 45px;
+    }
+
+
+    #homePage h2 {
+        font-size: 23px;
+    }
+
+
+    #homePage p {
+        font-size: 14px;
+    }
+
+
+    .levels {
+        grid-template-columns: 1fr;
+    }
+
+
+    .game-menu {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+
+    .game-card {
+        min-height: 170px;
+
+        padding: 15px 8px;
+    }
+
+
+    .game-icon {
+        font-size: 32px;
+    }
+
+
+    .game-card h3 {
+        font-size: 14px;
+    }
+
+
+    .game-card p {
+        font-size: 11px;
+    }
+
+
+    .game-button {
+        padding: 8px 20px;
+
+        font-size: 12px;
+    }
+
+
+    .game-area {
+        padding: 20px 12px;
+    }
+
+
+    .answers {
+        grid-template-columns: 1fr;
+    }
+
+
+    .question h1 {
+        font-size: 34px;
+    }
+
+
+    .game-info {
+        font-size: 12px;
+    }
+
+}
+/* =========================================
+   GAME 3 — TEBAK GAMBAR
+========================================= */
+
+#gambarImage {
+    display: block;
+    width: 315px;
+    height: 245px;
+    margin: 25px auto;
+    object-fit: contain;
+    background: white;
+    border: 3px solid #2563eb;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+#gambarQuestion {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 13px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#gambarAnswers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 500px;
+    margin: 15px auto;
+}
+
+#gambarAnswers .answer {
+    width: 100%;
+    min-height: 50px;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#gambarAnswers .answer:hover {
+    background: #1d4ed8;
+}
+
+#gambarFeedback {
+    min-height: 25px;
+    margin: 15px auto;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#gambarProgressBar {
+    width: 0%;
+    height: 100%;
+    background: #2563eb;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+#gambarProgressText {
+    margin-top: 5px;
+    color: #64748b;
+    font-size: 11px;
+    text-align: right;
+}
+
+#gambarNextButton {
+    display: none;
+    margin: 15px auto 0;
+    padding: 10px 22px;
+    background: #16a34a;
+    color: white;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#gambarNextButton:hover {
+    background: #15803d;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+
+    #gambarImage {
+        width: 260px;
+        height: 210px;
+    }
+
+    #gambarAnswers {
+        grid-template-columns: 1fr;
+    }
+
+    #gambarQuestion {
+        font-size: 18px;
+    }
+}
+/* =========================================
+   GAME 4 — ISTIMA'
+========================================= */
+
+.listening-audio-box {
+    margin: 20px auto;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    background: #f5f7fa;
+    border: 2px solid #e0e5eb;
+    max-width: 500px;
+}
+
+.audio-button {
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+    transition: 0.2s;
+}
+
+.audio-button:hover {
+    transform: scale(1.03);
+}
+
+.audio-button:active {
+    transform: scale(0.98);
+}
+
+.listening-audio-box p {
+    margin-top: 12px;
+    margin-bottom: 0;
+    color: #555;
+}

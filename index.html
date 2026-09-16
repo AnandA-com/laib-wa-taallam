@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>La'ib wa Ta'allam</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <!-- =========================================
+         HALAMAN UTAMA
+    ========================================== -->
+
+    <div id="homePage">
+
+        <h1>لعب وتعلم</h1>
+
+        <h2>
+            🎮 Belajar Bahasa Arab Sambil Bermain
+        </h2>
+
+        <p>
+            Yuk belajar mufradat dengan cara yang seru!
+        </p>
+
+        <button id="startButton">
+            🚀 Mulai Bermain
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================================
+         PILIH LEVEL
+    ========================================== -->
+
+    <div id="levelPage">
+
+        <button
+            id="backToHomeButton"
+            class="back-button">
+
+            ← Menu Utama
+
+        </button>
+
+
+        <h2>
+            📚 Pilih Level
+        </h2>
+
+
+        <p>
+            Pilih materi yang ingin kamu pelajari.
+        </p>
+
+
+        <div class="levels">
+
+
+            <!-- LEVEL 1 -->
+
+            <div class="level-card">
+
+                <div class="level-number">
+                    LEVEL 1
+                </div>
+
+                <h3>
+                    التَّعَارُفُ
+                </h3>
+
+                <p>
+                    Perkenalan
+                </p>
+
+                <button
+                    class="level-button"
+                    data-level="1">
+
+                    Mulai Level 1
+
+                </button>
+
+            </div>
+
+
+
+            <!-- LEVEL 2 -->
+
+            <div class="level-card">
+
+                <div class="level-number">
+                    LEVEL 2
+                </div>
+
+                <h3>
+                    المَرَافِقُ المَدْرَسِيَّةُ
+                </h3>
+
+                <p>
+                    Fasilitas Sekolah
+                </p>
+
+                <button
+                    class="level-button"
+                    data-level="2">
+
+                    Mulai Level 2
+
+                </button>
+
+            </div>
+
+
+
+            <!-- LEVEL 3 -->
+
+            <div class="level-card">
+
+                <div class="level-number">
+                    LEVEL 3
+                </div>
+
+                <h3>
+                    الأَدَوَاتُ المَدْرَسِيَّةُ
+                </h3>
+
+                <p>
+                    Peralatan Sekolah
+                </p>
+
+                <button
+                    class="level-button"
+                    data-level="3">
+
+                    Mulai Level 3
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         PILIH PERMAINAN
+    ========================================== -->
+
+    <div id="gameMenu">
+
+
+        <button
+            id="backToLevelFromMenu"
+            class="back-button">
+
+            ← Kembali ke Level
+
+        </button>
+
+
+        <!-- INFORMASI LEVEL -->
+
+        <div class="level-title">
+
+            <span id="menuLevelNumber">
+                LEVEL 1
+            </span>
+
+            <h3 id="menuLevelName">
+                التَّعَارُفُ
+            </h3>
+
+        </div>
+
+
+        <h2>
+            🎮 Pilih Permainan
+        </h2>
+
+
+        <p>
+            Pilih permainan yang ingin kamu mainkan.
+        </p>
+
+
+
+        <!-- 4 GAME -->
+
+        <div class="game-menu">
+
+
+            <!-- =================================
+                 COCOKKAN
+            ================================== -->
+
+            <div class="game-card">
+
+                <div class="game-icon">
+                    🧩
+                </div>
+
+                <h3>
+                    Cocokkan Mufradat
+                </h3>
+
+                <p>
+                    Cocokkan kata Arab dengan artinya.
+                </p>
+
+                <button
+                    id="cocokkanButton"
+                    class="game-button">
+
+                    Mulai
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================
+                 TERJEMAHKAN
+            ================================== -->
+
+            <div class="game-card">
+
+                <div class="game-icon">
+                    🔄
+                </div>
+
+                <h3>
+                    Terjemahkan
+                </h3>
+
+                <p>
+                    Uji kemampuan menerjemahkan kosakata.
+                </p>
+
+                <button
+                    id="terjemahkanButton"
+                    class="game-button">
+
+                    Mulai
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================
+                 TEBAK GAMBAR
+            ================================== -->
+
+            <div class="game-card">
+
+                <div class="game-icon">
+                    🖼️
+                </div>
+
+                <h3>
+                    Tebak Gambar
+                </h3>
+
+                <p>
+                    Tebak kosakata berdasarkan gambar.
+                </p>
+
+                <button
+                    id="gambarButton"
+                    class="game-button">
+
+                    Mulai
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================
+                 LISTENING
+            ================================== -->
+
+            <div class="game-card">
+
+                <div class="game-icon">
+                    🔊
+                </div>
+
+                <h3>
+                    Istima'
+                </h3>
+
+                <p>
+                    Dengarkan kosakata bahasa Arab dan pilih arti yang tepat.
+                </p>
+
+                <button
+                    id="listeningButton"
+                    class="game-button">
+
+                    Mulai
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         GAME COCOKKAN MUFRADAT
+    ========================================== -->
+
+    <div
+        id="gameCocokkan"
+        class="game-area">
+
+
+        <button
+            id="backToGameMenuButton"
+            class="back-button">
+
+            ← Pilih Permainan
+
+        </button>
+
+
+        <div class="level-title">
+
+            <span id="levelNumber">
+                LEVEL 1
+            </span>
+
+            <h3 id="levelName">
+                التَّعَارُفُ
+            </h3>
+
+        </div>
+
+
+        <h2>
+            🧩 Cocokkan Mufradat
+        </h2>
+
+
+        <div class="game-info">
+
+            <span>
+                Soal:
+                <strong id="nomorSoal">
+                    1
+                </strong>/10
+            </span>
+
+
+            <span>
+                ⭐ Skor:
+                <strong id="score">
+                    0
+                </strong>
+            </span>
+
+        </div>
+
+
+
+        <!-- PROGRESS -->
+
+        <div class="progress-container">
+
+            <div class="progress-bar">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+            <p id="progressText">
+                10% selesai
+            </p>
+
+        </div>
+
+
+
+        <p>
+            Pilih arti yang benar dari kata berikut:
+        </p>
+
+
+
+        <div class="question">
+
+            <h1 id="kataArab"></h1>
+
+        </div>
+
+
+
+        <div class="answers">
+        </div>
+
+
+
+        <p id="feedback"></p>
+
+
+
+        <button
+            id="nextButton"
+            class="next-button">
+
+            Soal Berikutnya →
+
+        </button>
+
+
+    </div>
+
+
+
+    <!-- =========================================
+         GAME TERJEMAHKAN
+    ========================================== -->
+
+    <div
+        id="gameTerjemahkan"
+        class="game-area">
+
+
+        <button
+            id="backFromTranslate"
+            class="back-button">
+
+            ← Pilih Permainan
+
+        </button>
+
+
+        <div class="level-title">
+
+            <span id="translateLevelNumber">
+                LEVEL 1
+            </span>
+
+            <h3 id="translateLevelName">
+                التَّعَارُفُ
+            </h3>
+
+        </div>
+
+
+        <h2>
+            🔄 Terjemahkan
+        </h2>
+
+
+        <p>
+            Pilih terjemahan bahasa Indonesia yang benar.
+        </p>
+
+
+
+        <!-- INFORMASI GAME -->
+
+        <div class="game-info">
+
+            <span>
+                Soal:
+                <strong id="translateNomorSoal">
+                    1
+                </strong>/10
+            </span>
+
+
+            <span>
+                ⭐ Skor:
+                <strong id="translateScore">
+                    0
+                </strong>
+            </span>
+
+        </div>
+
+
+
+        <!-- PROGRESS -->
+
+        <div class="progress-container">
+
+            <div class="progress-bar">
+
+                <div id="translateProgressBar"></div>
+
+            </div>
+
+            <p id="translateProgressText">
+                10% selesai
+            </p>
+
+        </div>
+
+
+
+        <!-- SOAL -->
+
+        <div class="question">
+
+            <h1 id="translateQuestion"></h1>
+
+        </div>
+
+
+
+        <!-- PILIHAN -->
+
+        <div
+            id="translateAnswers"
+            class="answers">
+        </div>
+
+
+
+        <!-- FEEDBACK -->
+
+        <p id="translateFeedback"></p>
+
+
+
+        <!-- NEXT -->
+
+        <button
+            id="translateNextButton"
+            class="next-button">
+
+            Soal Berikutnya →
+
+        </button>
+
+
+    </div>
+
+
+
+    <!-- =========================================
+     GAME TEBAK GAMBAR
+========================================== -->
+
+<div id="gameGambar" class="game-area">
+
+    <!-- Tombol kembali -->
+    <button id="backFromGambar" class="back-button">
+        ← Pilih Permainan
+    </button>
+
+    <!-- INFORMASI LEVEL -->
+    <div class="level-title">
+        <span id="gambarLevelNumber">
+            LEVEL 1
+        </span>
+
+        <h3 id="gambarLevelName">
+            التَّعَارُفُ
+        </h3>
+    </div>
+
+    <h2>🖼️ Tebak Gambar</h2>
+
+    <p>
+        Pilih kosakata bahasa Arab yang sesuai dengan gambar.
+    </p>
+
+    <!-- INFORMASI GAME -->
+    <div class="game-info">
+
+        <span>
+            Soal:
+            <strong id="gambarNomorSoal">1</strong>/10
+        </span>
+
+        <span>
+            ⭐ Skor:
+            <strong id="gambarScore">0</strong>
+        </span>
+
+    </div>
+
+    <!-- PROGRESS -->
+    <div class="progress-container">
+
+        <div class="progress-bar">
+            <div id="gambarProgressBar"></div>
+        </div>
+
+        <p id="gambarProgressText">
+            10% selesai
+        </p>
+
+    </div>
+
+    <!-- GAMBAR -->
+    <div class="gambar-container">
+
+        <div
+            id="gambarImage"
+            class="gambar-image">
+        </div>
+
+    </div>
+
+    <!-- PERTANYAAN -->
+    <div class="question">
+
+        <h2 id="gambarQuestion">
+            Gambar apakah ini?
+        </h2>
+
+    </div>
+
+    <!-- PILIHAN JAWABAN -->
+    <div
+        id="gambarAnswers"
+        class="answers">
+    </div>
+
+    <!-- FEEDBACK -->
+    <p id="gambarFeedback"></p>
+
+    <!-- TOMBOL BERIKUTNYA -->
+    <button
+        id="gambarNextButton"
+        class="next-button">
+        Soal Berikutnya →
+    </button>
+
+</div>
+
+
+    <!-- =========================================
+     GAME 4 — ISTIMA'
+========================================== -->
+
+<div
+    id="gameListening"
+    class="game-area">
+
+    <button
+        id="backFromListening"
+        class="back-button">
+
+        ← Pilih Permainan
+
+    </button>
+
+
+    <div class="level-title">
+
+        <span id="listeningLevelNumber">
+            LEVEL 1
+        </span>
+
+        <h3 id="listeningLevelName">
+            التَّعَارُفُ
+        </h3>
+
+    </div>
+
+
+    <h2>
+        🎧 Istima'
+    </h2>
+
+    <p>
+        Dengarkan kosakata bahasa Arab
+        dan pilih arti yang tepat.
+    </p>
+
+
+    <!-- INFO SOAL -->
+
+    <div class="game-info">
+
+        <span>
+            Soal:
+            <strong id="listeningNomorSoal">
+                1
+            </strong>/10
+        </span>
+
+
+        <span>
+            ⭐ Skor:
+            <strong id="listeningScore">
+                0
+            </strong>
+        </span>
+
+    </div>
+
+
+    <!-- PROGRESS -->
+
+    <div class="progress-container">
+
+        <div
+            id="listeningProgressBar"
+            class="progress-bar">
+        </div>
+
+    </div>
+
+
+    <p
+        id="listeningProgressText"
+        class="progress-text">
+
+        10% selesai
+
+    </p>
+
+
+    <!-- AUDIO -->
+
+    <div class="listening-audio-box">
+
+        <button
+            id="listeningPlayButton"
+            class="audio-button">
+
+            🔊 Dengarkan
+
+        </button>
+
+        <p>
+            Klik tombol untuk mendengarkan
+            kosakata bahasa Arab.
+        </p>
+
+    </div>
+
+
+    <!-- PERTANYAAN -->
+
+    <div
+        id="listeningQuestion"
+        class="question-box">
+
+        Apa arti kata yang kamu dengar?
+
+    </div>
+
+
+    <!-- JAWABAN -->
+
+    <div
+        id="listeningAnswers"
+        class="answers">
+
+    </div>
+
+
+    <!-- FEEDBACK -->
+
+    <p
+        id="listeningFeedback">
+
+    </p>
+
+
+    <!-- NEXT -->
+
+    <button
+        id="listeningNextButton"
+        class="next-button">
+
+        Soal Berikutnya →
+
+    </button>
+
+
+</div>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
